@@ -12,6 +12,8 @@ int counter = 0;
 
   @override
   Widget build(BuildContext context) {
+    double deviceHeight = MediaQuery.of(context).size.height;
+    double deviceWidth = MediaQuery.of(context).size.width;
     return  Scaffold(
       body: Column(
         mainAxisAlignment:  MainAxisAlignment.center,
@@ -48,8 +50,8 @@ int counter = 0;
             print("This is container");
           },
           child: Container(
-          height: 20,
-          width: 30,
+          height: 50,
+          width: 2000,
          child: Text("Container Image inside tche imaghe portion ",style: TextStyle(
           color: Colors.black,
           fontFamily: "RubikBubbles",
@@ -87,6 +89,7 @@ borderRadius: BorderRadius.circular(5)
           ),
         ),
         Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           
           color: Colors.grey,
           elevation: 18.0,
@@ -103,24 +106,30 @@ borderRadius: BorderRadius.circular(5)
       Row(
         children: [
           Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             elevation: 10.0,
             child: Container(
               height: 100,
               width: 170, 
   decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+
                 image: DecorationImage(image: AssetImage("assets/images/sj.jpg"),
                 fit: BoxFit.cover)
               ), 
             ),
           ),
           Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+
             elevation: 10.0,
             child: Container(
                 height: 100,
               width: 170,
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(image: AssetImage("assets/images/sm.jpg"),
-                fit: BoxFit.cover)
+                fit: BoxFit.cover),
               ), 
             ),
           )
