@@ -62,7 +62,8 @@ flutter:
   assets:
     - assets/images/sm.jpg
     - assets/images/sj.jpg
-
+    - assets/images/id.png
+    - assets/images/qr.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
